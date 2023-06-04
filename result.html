@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/result.css" />
+    <title>Form Results</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Results Information</h1>
+      <div class="result">
+        <div class="result-box">
+          Firstname
+        </div>
+        <div class="result-box" id="firstname">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Middlename
+        </div>
+        <div class="result-box" id="middlename">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Lastname
+        </div>
+        <div class="result-box" id="lastname">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Date of birth
+        </div>
+        <div class="result-box" id="dob">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Student ID
+        </div>
+        <div class="result-box" id="student-id">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Street Address
+        </div>
+        <div class="result-box" id="address">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          City
+        </div>
+        <div class="result-box" id="city">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          State / Province
+        </div>
+        <div class="result-box" id="state">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Country
+        </div>
+        <div class="result-box" id="country">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Zip Code
+        </div>
+        <div class="result-box" id="zip-code">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Email
+        </div>
+        <div class="result-box" id="email">
+          Ayedun Mayowa
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-box">
+          Comment
+        </div>
+        <div class="result-box" id="comment">
+          Ayedun Mayowa
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const data = JSON.parse(localStorage.getItem('student-data'))
+
+      const firstname = (document.getElementById('firstname').innerHTML =
+        data.firstname)
+      const middlename = (document.getElementById('middlename').innerHTML =
+        data.middlename)
+      const lastname = (document.getElementById('lastname').innerHTML =
+        data.lastname)
+      const dateofbirth = (document.getElementById('dob').innerHTML =
+        data.dateofbirth)
+      const studentId = (document.getElementById('student-id').innerHTML =
+        data.studentId)
+      const address = (document.getElementById('address').innerHTML =
+        data.address)
+      const city = (document.getElementById('city').innerHTML = data.city)
+      const state = (document.getElementById('state').innerHTML = data.state)
+      const country = (document.getElementById('country').innerHTML =
+        data.country)
+      const zipCode = (document.getElementById('zip-code').innerHTML =
+        data.zipCode)
+      const email = (document.getElementById('email').innerHTML = data.email)
+      const comment = (document.getElementById('comment').innerHTML =
+        data.comment)
+    </script>
+  </body>
+</html>

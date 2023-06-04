@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>AYEDUN MAYOWA PROJECT FORM | TIIDELab Assignment</title>
+  </head>
+  <body>
+    <!-- ======================== -->
+    <div class="container">
+      <!-- HEADER SECTION -->
+      <section class="header">
+        <div class="logo-box">
+          <p>MAYOR</p>
+        </div>
+
+        <div class="reg-form">
+          <h1>Student Registration Form</h1>
+          <p>
+            Fill out the form to apply the training course. You can consider
+            your application accepted after you receive a conformation email.
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================== -->
+      <!-- CONTAINER SECTION -->
+
+      <form action="" id="registration-form">
+        <!-- student information -->
+
+        <h3>Student Information</h3>
+
+        <!-- form name -->
+        <div class="form-name">
+          <input
+            type="text"
+            name="f-name"
+            id="f-name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="m-name"
+            id="m-name"
+            placeholder="Middle Name"
+            required
+          />
+          <input
+            type="text"
+            name="l-name"
+            id="l-name"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <!-- date of birth -->
+        <div class="date-of-birth">
+          <input
+            type="date"
+            name="dob"
+            id="dob"
+            placeholder="Date of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="student-id"
+            id="student-id"
+            placeholder="Student ID"
+            required
+          />
+        </div>
+
+        <!-- Address -->
+        <h3>Address</h3>
+        <div class="address">
+          <input
+            type="text"
+            name="street"
+            id="address"
+            placeholder="Street Address"
+            required
+          />
+        </div>
+
+        <!-- city -->
+        <div class="city">
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required
+          />
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="State / Province"
+            required
+          />
+        </div>
+
+        <!-- zip code -->
+        <div class="zip-code">
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
+            required
+          />
+          <input
+            type="text"
+            name="zip-code"
+            id="zip-code"
+            placeholder="ZIP Code"
+            required
+          />
+        </div>
+
+        <!-- Contact information -->
+        <h3>Contact Information</h3>
+        <div class="contact-information">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <input type="text" name="confirm-email" />
+        </div>
+
+        <!-- Courses -->
+        <h3>Courses</h3>
+
+        <div class="info-course">
+          <button class="info-button">
+            <i class="fa-solid fa-plus"></i>
+            Add new record
+          </button>
+
+          <!-- Course Records -->
+          <div class="course-record">
+            <div class="record-box">
+              Course
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Level
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Language
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Start Date
+              <i class="fa-solid fa-filter"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comment -->
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comments"
+          required
+        ></textarea>
+
+        <!-- Send Request BUTTON -->
+
+        <button id="loginForm" class="send-btn">SEND REQUEST</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

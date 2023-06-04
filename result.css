@@ -1,0 +1,16 @@
+.container {
+    padding: 30px;
+  }
+  
+  .result {
+    display: flex;
+    align-items: center;
+  }
+  
+  .result-box {
+    padding: 10px;
+    width: 200px;
+    background: #ece9e9;
+    border: 1px solid #999;
+  }
+  

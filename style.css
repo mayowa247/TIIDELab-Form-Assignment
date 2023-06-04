@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* CONTAINER */
+  .container {
+    width: 95%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* ========================  */
+  /* HEADER SECTION  */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .logo-box {
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 45px;
+  }
+  
+  .reg-form h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  
+  .reg-form p {
+    font-size: 1rem;
+    color: rgb(34, 34, 34);
+    line-height: 25px;
+  }
+  
+  /* ========================  */
+  /* CONTAINER SECTION  */
+  
+  #registration-form {
+    padding: 20px 0;
+    width: 100%;
+    /* background-color: rgb(255, 187, 187); */
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* student information */
+  
+  .form-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-name input {
+    width: 30%;
+  }
+  
+  /* date of birth */
+  .date-of-birth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .date-of-birth input {
+    width: 48%;
+  }
+  
+  /* address */
+  .address input {
+    width: 100%;
+  }
+  
+  /* city section */
+  .city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .city input {
+    width: 48%;
+  }
+  
+  /* zip code */
+  .zip-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .zip-code input {
+    width: 48%;
+  }
+  
+  /* contact information */
+  .contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-information input {
+    width: 48%;
+  }
+  
+  #registration-form input {
+    padding: 12px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background: transparent;
+  }
+  
+  #registration-form input:focus {
+    background-color: rgb(227, 226, 252);
+  }
+  
+  /* Courses */
+  
+  .info-course {
+    padding: 10px;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(245, 245, 245);
+    /* width: 99%; */
+  }
+  
+  .info-button {
+    padding: 14px 30px;
+    background-color: rgb(227, 226, 252);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .info-button .fa-solid {
+    margin-right: 10px;
+  }
+  
+  .course-record {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+  }
+  
+  .course-record .record-box {
+    border-right: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    width: 180px;
+    cursor: pointer;
+  }
+  
+  .course-record .record-box .fa-solid {
+    font-size: 10px;
+  }
+  
+  /* Comment */
+  
+  #comment {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Send Request BUTTON  */
+  
+  .send-btn {
+    width: 100%;
+    background: rgb(2, 93, 197);
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2 Linear;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  
+  .send-btn:hover {
+    background-color: blue;
+  }
+  
+  /* RESPONSIVE SECTION */
+  @media (min-width: 1240px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 98%;
+    }
+  
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 20px 10px;
+    }
+  
+    .logo-box {
+      margin-right: 0;
+    }
+  
+    .reg-form h1 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .form-name {
+      flex-direction: column;
+    }
+  
+    .form-name input {
+      width: 100%;
+    }
+  
+    .date-of-birth {
+      flex-direction: column;
+    }
+  
+    .date-of-birth input {
+      width: 100%;
+    }
+  
+    .city {
+      flex-direction: column;
+    }
+  
+    .city input {
+      width: 100%;
+    }
+  
+    .zip-code {
+      flex-direction: column;
+    }
+  
+    .zip-code input {
+      width: 100%;
+    }
+  
+    .contact-information {
+      flex-direction: column;
+    }
+  
+    .contact-information input {
+      width: 100%;
+    }
+  
+    .info-button {
+      width: 100%;
+    }
+  
+    .course-record {
+      flex-direction: column;
+    }
+  
+    .course-record .record-box {
+      width: 100%;
+      border-bottom: 1px solid #999;
+    }
+  }
+  
